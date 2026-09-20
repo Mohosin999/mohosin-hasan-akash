@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  :root.light {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-[#0a0a0a] text-[#ededed] antialiased;
+    font-feature-settings: "cv11", "ss01";
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  .light body {
+    @apply bg-white text-zinc-900;
+  }
+
+  ::selection {
+    background: rgba(34, 211, 238, 0.25);
+  }
+
+  :focus-visible {
+    outline: 2px solid #22d3ee;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-label {
+    @apply font-mono text-[11px] sm:text-xs font-medium uppercase tracking-[0.2em] text-secondary dark:text-[#a1a1a1];
+  }
+
+  .light .section-label {
+    color: #52525b;
+  }
+
+  .card {
+    @apply rounded-lg border border-[#262626] bg-[#161616] transition-all duration-200 ease-out;
+  }
+
+  .light .card {
+    @apply border-zinc-200 bg-zinc-50;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-1 hover:border-zinc-600 hover:shadow-[0_8px_30px_rgb(0,0,0,0.4)];
+  }
+
+  .light .card-hover {
+    @apply hover:border-zinc-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)];
+  }
+
+  .tag {
+    @apply inline-flex items-center rounded border border-[#2a2a2a] bg-[#0f0f0f] px-2 py-0.5 font-mono text-[11px] leading-5 text-[#a1a1a1];
+  }
+
+  .light .tag {
+    @apply border-zinc-200 bg-white text-zinc-600;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+}
