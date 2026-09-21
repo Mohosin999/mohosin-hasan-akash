@@ -37,10 +37,10 @@ export default function Skills() {
           ))}
         </div>
 
-        <p className="mt-6 font-mono text-xs leading-relaxed text-[#666] sm:text-[13px] light:text-zinc-500">
+        {/* <p className="mt-6 font-mono text-xs leading-relaxed text-[#666] sm:text-[13px] light:text-zinc-500">
           <span className="text-cyan-400">$</span> also_comfortable_with --testing(vitest, playwright)
           --observability(prometheus, grafana) --ci(actions, docker)
-        </p>
+        </p> */}
       </div>
     </section>
   );

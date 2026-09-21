@@ -22,7 +22,7 @@ export default function Contact() {
           <Reveal>
             <p className="max-w-xl text-sm leading-relaxed text-[#a1a1a1] sm:text-[15px] light:text-zinc-600">
               Currently available for full-time roles and interesting projects.
-              Best way to reach me is email — I read everything.
+              Best way to reach me is email or LinkedIn, I read everything.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
               <a
@@ -56,7 +56,7 @@ export default function Contact() {
 
       <footer className="border-t border-[#1f1f1f] light:border-zinc-200">
         <div className="container-x flex flex-col gap-2 py-6 font-mono text-xs text-[#666] sm:flex-row sm:items-center sm:justify-between light:text-zinc-500">
-          <p>© {year} {profile.name}. Built with Next.js + Tailwind.</p>
+          <p>© {year} {profile.name}</p>
           <p>
             last_updated: {year} ·{" "}
             <a href="#top" className="underline underline-offset-4 hover:text-cyan-300">

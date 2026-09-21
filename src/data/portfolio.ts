@@ -41,7 +41,7 @@ export const projects: Project[] = [
     name: "atsup",
     description:
       "ATSUp is an AI resume optimizer that provides accurate ATS scores by evaluating resumes against job descriptions for searchability, skills, formatting, and recruiter criteria, with actionable feedback from real content. The platform manually builds standardized ATS-friendly resumes and rewrites resumes to tailor to specific jobs without inventing or hallucinating information.",
-    stack: ["TypeScript", "React", "Node.js", "Prisma ORM", "Postgres", "Redis"],
+    stack: ["TypeScript", "React", "Node.js", "Postgres", "Redis"],
     // metric: "↓ 42% latency",
     // metricLabel: "p95 write latency",
     live: "https://atsup.vercel.app/",
@@ -50,7 +50,7 @@ export const projects: Project[] = [
   {
     name: "chatbot",
     description:
-      "A full-stack AI chatbot platform with real-time streaming, agentic function calling, conversation summarization, and multimodal image/PDF input. Supports structured JSON output, prompt-engineered generation controls, and secure JWT authentication with persistent user chat history and summaries.",
+      "A full-stack AI chatbot platform with real-time streaming, message editing & re-streaming with branch history, agentic function calling, token-aware context management (128k budget allocation, pruning & compression), conversation summarization, and multimodal image/PDF input. Supports structured JSON output and prompt-engineered generation controls.",
     stack: ["TypeScript", "React", "Node.js", "MongoDB"],
     // metric: "12min → 3min",
     // metricLabel: "median deploy time",
@@ -58,81 +58,73 @@ export const projects: Project[] = [
     github: "https://github.com/Mohosin999/chatbot-full-stack-mern-app",
   },
   {
-    name: "mindSafe",
-    description:
-      "MindSafe is a full-stack mental health platform designed for anxiety and panic support. It provides guided assessments, real-time panic relief tools, a structured 40-day wellness program with progress tracking, an anonymous peer community, and role-based dashboards. Built with Next.js, Prisma, PostgreSQL, and NextAuth, it enables secure, scalable, and personalized recovery journeys.",
-    stack: ["Next.js", "Prisma ORM", "Postgres", "Tailwind"],
-    // metric: "80k users",
-    // metricLabel: "scaled, no downtime",
-    live: "#",
-    github: "#",
-  },
-  {
     name: "clean-youtube",
     description:
-      "Problem: auth added 400ms per request at the edge. Solution: moved session verification to middleware with JWKS caching and short-lived rotated keys.",
-    stack: ["Next.js", "Edge", "Redis", "OAuth2"],
+      "Clean YouTube is a user-friendly web app that provides a clean, distraction-free YouTube experience. It removes ads and cluttered layouts, helping users focus on their videos while managing playlists, accessing recently viewed playlists, and saving favorites seamlessly.",
+    stack: ["JavaScript", "React", "MUI"],
     // metric: "↓ 78% auth overhead",
     // metricLabel: "p50 request time",
-    live: "#",
-    github: "#",
+    live: "https://clean-youtube-app.vercel.app/",
+    github: "https://github.com/Mohosin999/clean-youtube-app",
   },
+  // {
+  //   name: "clean-youtube",
+  //   description:
+  //     "Real-Time Chat App is a full-stack messaging platform built with React, Node.js, and Socket.IO, delivering seamless one-on-one and group conversations with instant message delivery. Users can share images, reply to specific messages, see typing indicators, and view online presence in real time. The app features secure JWT authentication, dark/light theme, optimistic UI updates, and soft message deletion.",
+  //   stack: ["Next.js", "Edge", "Redis", "OAuth2"],
+  //   // metric: "↓ 78% auth overhead",
+  //   // metricLabel: "p50 request time",
+  //   live: "#",
+  //   github: "#",
+  // },
 ];
 
 export const jobs: Job[] = [
   {
     company: "Freelance",
     role: "Full-Stack Developer",
-    duration: "Aug 2026 - Sep 2026",
+    duration: "Feb 2024 — Jun 2025",
     location: "Remote",
     bullets: [
-      "Built a full-stack mental health platform using Next.js, Prisma, PostgreSQL.",
-      "Developed guided assessments, panic relief tools, and a 40-day wellness program with progress tracking.",
-      "Implemented anonymous peer community with privacy-focused user interactions.",
-      "Built role-based dashboards and secure authentication/authorization for scalable platform management.",
-    ],
-    stack: ["Next.js", "TypeScript", "Prisma ORM", "Postgres"],
-  },
-  {
-    company: "Freelance",
-    role: "Full-Stack Developer",
-    duration: "Apr 2025 — Jun 2025",
-    location: "Remote",
-    bullets: [
-      "Developed a secure invite-only authentication system with custom OTP verification using Next.js and Strapi, serving 50+ users.",
+      "Architected a secure invite-only authentication system with custom OTP verification using Next.js and Strapi, serving 50+ users.",
       "Built an admin dashboard for efficient user management and platform administration.",
       "Developed dynamic profile pages with personalized, user-specific data.",
     ],
-    stack: ["Next.js", "TypeScript", "Strapi.js",],
+    stack: ["Next.js", "TypeScript", "Strapi.js"],
   },
-  // {
-  //   company: "Freelance",
-  //   role: "Software Engineer",
-  //   duration: "2019 — 2021",
-  //   location: "Remote",
-  //   bullets: [
-  //     "Delivered 15+ production apps for startups; 3 reached profitability on v1 infrastructure I designed.",
-  //   ],
-  //   stack: ["TypeScript", "Postgres", "Vercel", "Stripe"],
-  // },
 ];
 
 export const skillGroups = [
   {
     title: "Frontend",
-    items: ["TypeScript", "React", "Next.js", "Tailwind CSS", "HTML/CSS"],
+    items: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Redux-Toolkit / Zustand",
+    ],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Go", "Postgres", "Redis", "GraphQL / REST"],
+    items: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Postgres",
+      "Prisma ORM",
+      "Redis",
+      "REST",
+    ],
   },
   {
-    title: "Infrastructure",
-    items: ["AWS", "Docker", "CI/CD", "Terraform", "Observability"],
+    title: "Testing",
+    items: ["Jest", "Vitest", "React Testing Library"],
   },
   {
     title: "Tools",
-    items: ["Git", "Linux", "Vim", "Figma", "Notion"],
+    items: ["Git", "Linux", "Notion"],
   },
 ] as const;
 

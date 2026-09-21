@@ -47,7 +47,7 @@ export default function Hero() {
           {[
             ["$ whoami", "full-stack"],
             ["$ uptime", "3+ yrs"],
-            ["$ location", "remote • bangladesh"],
+            ["$ location", "bangladesh"],
           ].map(([k, v]) => (
             <div key={k} className="min-w-0">
               <dt className="truncate text-[#666] light:text-zinc-400">{k}</dt>

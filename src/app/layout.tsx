@@ -43,7 +43,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: themeInitScript() }}
         />
       </head>
-      <body
+      <body suppressHydrationWarning
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans min-h-screen bg-[#0a0a0a] text-[#ededed]`}
       >
         <a
