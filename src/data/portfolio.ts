@@ -60,35 +60,25 @@ export const projects: Project[] = [
   {
     name: "clean-youtube",
     description:
-      "Clean YouTube is a user-friendly web app that provides a clean, distraction-free YouTube experience. It removes ads and cluttered layouts, helping users focus on their videos while managing playlists, accessing recently viewed playlists, and saving favorites seamlessly.",
+      "Clean YouTube is a distraction-free YouTube experience for focused learning. Save any playlist or single video and watch it in a clean, ad-free player, no shorts, no recommendations, no clutter. Your library (playlists + videos) lives locally in the browser, with separate pages for Playlists and Videos, plus Favorites and Recents.",
     stack: ["JavaScript", "React", "MUI"],
     // metric: "↓ 78% auth overhead",
     // metricLabel: "p50 request time",
     live: "https://clean-youtube-app.vercel.app/",
     github: "https://github.com/Mohosin999/clean-youtube-app",
   },
-  // {
-  //   name: "clean-youtube",
-  //   description:
-  //     "Real-Time Chat App is a full-stack messaging platform built with React, Node.js, and Socket.IO, delivering seamless one-on-one and group conversations with instant message delivery. Users can share images, reply to specific messages, see typing indicators, and view online presence in real time. The app features secure JWT authentication, dark/light theme, optimistic UI updates, and soft message deletion.",
-  //   stack: ["Next.js", "Edge", "Redis", "OAuth2"],
-  //   // metric: "↓ 78% auth overhead",
-  //   // metricLabel: "p50 request time",
-  //   live: "#",
-  //   github: "#",
-  // },
 ];
 
 export const jobs: Job[] = [
   {
     company: "Freelance",
-    role: "Full-Stack Developer",
-    duration: "Feb 2024 — Jun 2025",
+    role: "Frontend Developer",
+    duration: "Feb 2024 — Dec 2024",
     location: "Remote",
     bullets: [
-      "Architected a secure invite-only authentication system with custom OTP verification using Next.js and Strapi, serving 50+ users.",
-      "Built an admin dashboard for efficient user management and platform administration.",
-      "Developed dynamic profile pages with personalized, user-specific data.",
+      "Built an invite-only user management system with Next.js & Strapi, serving 50+ users.",
+      "Developed a Strapi-based admin dashboard for secure user creation and management.",
+      "Designed and developed 12 fully responsive pages using Next.js & Tailwind CSS.",
     ],
     stack: ["Next.js", "TypeScript", "Strapi.js"],
   },

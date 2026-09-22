@@ -15,12 +15,12 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Full-Stack Engineer",
+  title: "Mohosin Hasan Akash",
   description:
     "Full-Stack Engineer. I design and ship reliable systems from database to interface.",
   metadataBase: new URL("https://example.com"),
   openGraph: {
-    title: "Your Name — Full-Stack Engineer",
+    title: "Mohosin Hasan Akash",
     description:
       "I design and ship reliable systems from database to interface.",
     type: "website",
